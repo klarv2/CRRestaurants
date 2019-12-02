@@ -1,11 +1,11 @@
 import React from 'react'
-import {NavLink, withRouter} from 'react-router-dom'
+import {Link, NavLink, withRouter} from 'react-router-dom'
 
 const Navbar = () => {
     return(
-        <nav className='nav-wrapper black darken-3'>
+        <nav className='nav-wrapper black'>
             <div className="container">
-                <a className="brand-logo">Travel Agency</a>
+                <Link to="/" className="brand-logo">Travel Agency</Link>
                 <ul className="right">
                     <li><NavLink to="/">Home</NavLink></li>
                 </ul>

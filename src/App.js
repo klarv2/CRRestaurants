@@ -1,9 +1,10 @@
 import React from 'react';
-import './App.css';
+import './assets/css/style.css';
 import {BrowserRouter, Route} from 'react-router-dom'
 
 import Navbar from './components/Navbar'
 import Home from './components/Home'
+import DetailPage from './components/DetailPage'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Route exact path="/" component={Home} />
+        <Route exact path="/:id" component={DetailPage} />
       </div>
     </BrowserRouter>
   );
