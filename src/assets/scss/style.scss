@@ -77,6 +77,8 @@ img{
       padding-left: 5%;
       padding-right: 5%;
       position: relative;
+      white-space: nowrap;
+      overflow: hidden;
     }
     .slider-wrapper {
       width: 100%;
@@ -90,6 +92,7 @@ img{
     .slide {
       display: inline;
       width: 22%;
+      white-space: normal;
       @media only screen and (min-width: 768px){
         display: inline-block;
         margin: 1.25%;
@@ -213,6 +216,7 @@ img{
           display: inline-block;
           width: 18%;
           margin: 1.25%;
+          height: 250px;
           &:first-child{
             margin-left: 0;
           }
@@ -221,6 +225,9 @@ img{
           }
         }
       }
+    }
+    .detail-body{
+      margin: 5vh 0;
     }
   }
 }

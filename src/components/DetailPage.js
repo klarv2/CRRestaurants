@@ -27,9 +27,12 @@ class DetailPage extends Component{
               {post.images.map(i =>
               {
                 return(
-                  <div className="detail-tumbnail">
-                  <img src={i.src}/>
-                </div>
+                  <div className="detail-tumbnail" style={{
+                    backgroundImage: `url(${i.src})`, 
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: '50% 60%'}}>
+                  </div>
                 )
                 
               })}

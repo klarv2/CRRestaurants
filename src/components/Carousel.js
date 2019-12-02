@@ -26,7 +26,7 @@ class Carousel extends Component {
 
     goToNextSlide = () => {
 
-        if(this.state.currentIndex === this.state.posts.length - 1) {
+        if(this.state.currentIndex === this.state.posts.length - 4) {
           return this.setState({
             currentIndex: 0,
             translateValue: 0
